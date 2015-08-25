@@ -1,4 +1,5 @@
 Posts = new Mongo.Collection('posts');
+Pages = new Mongo.Collection('pages');
 if(Meteor.isServer) {
   Posts.remove({});
   Posts.insert({
