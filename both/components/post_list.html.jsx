@@ -1,6 +1,8 @@
 <template name="PostList">
   <div>
-    This is the post list
+    <h1>
+      {this.data.posts[0].title}
+    </h1>
     <ul>
       {this.data.posts.map(function(task) {
         var path = FlowRouter.path('post', {_id: task._id})
